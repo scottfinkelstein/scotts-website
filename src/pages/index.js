@@ -5,17 +5,42 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
-
-export default IndexPage
+export default function Index({ data }) {
+  const { edges: posts } = data.allMarkdownRemark
+  return(
+    <Layout>
+      <SEO title="Home" />
+      <p dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.description }}></p>
+      <h3>My Posts</h3>
+      { posts.filter(post => post.node.frontmatter.title.length > 0).map(({ node: post }) => {
+        return(
+          <div key="{ post.id }">
+            <h3><Link to={ post.frontmatter.path }>{ post.frontmatter.title }</Link></h3>
+          </div>
+        )
+      })}
+    </Layout>
+  )
+}
+export const pageQuery = graphql`
+  query IndexQuery {
+    site {
+      siteMetadata {
+        title
+        author
+        description
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC}) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date
+            path
+          }
+        }
+      }
+    }
+  }
+`
