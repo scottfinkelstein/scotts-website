@@ -1,14 +1,16 @@
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Image from "gatsby-image"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteData }) => (
   <header>
     <div className="logo">
       <h1>
         <Link
           to="/">
-          {siteTitle}
+          <Image fixed={ siteData.avatar.childImageSharp.fixed } alt={ siteData.site.siteMetadata.author } style={{ borderRadius: '100%', minWidth: 50, marginRight: '1rem' }} />
+          {siteData.site.siteMetadata.title}
         </Link>
       </h1>
     </div>
@@ -19,12 +21,13 @@ const Header = ({ siteTitle }) => (
   </header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+// Header.propTypes = {
+//   siteTitle: PropTypes.string,
+// }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+// Header.defaultProps = {
+//   siteTitle: ``,
+// }
 
 export default Header
+

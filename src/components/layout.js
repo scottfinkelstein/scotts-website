@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Image from "gatsby-image"
 
 import Header from "./header"
 import "./layout.css"
@@ -21,12 +22,19 @@ const Layout = ({ children }) => {
           author
         }
       }
+      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+        childImageSharp {
+            fixed(width: 50, height:50) {
+                ...GatsbyImageSharpFixed
+            }
+        }
+    }
     }
   `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteData={data} />
       <div>
         <main>{children}</main>
         <footer>
