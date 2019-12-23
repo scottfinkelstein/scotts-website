@@ -25,14 +25,23 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 3rem;
 }
 
-header .logo a {
+header .logo {
+  display: flex;
+  align-items: center;
   color: inherit;
+}
+
+header span.site-title {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 header .top-nav {
   list-style: none;
+  padding: 0;
   display: flex;
 }
 

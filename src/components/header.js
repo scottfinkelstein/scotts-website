@@ -5,15 +5,15 @@ import Image from "gatsby-image"
 
 const Header = ({ siteData }) => (
   <header>
-    <div className="logo">
-      <h1>
-        <Link
-          to="/">
-          <Image fixed={ siteData.avatar.childImageSharp.fixed } alt={ siteData.site.siteMetadata.author } style={{ borderRadius: '100%', minWidth: 50, marginRight: '1rem' }} />
-          {siteData.site.siteMetadata.title}
-        </Link>
-      </h1>
-    </div>
+    
+      <Link to="/" className="logo">
+        <Image fixed={ siteData.avatar.childImageSharp.fixed } alt={ siteData.site.siteMetadata.author } style={{ borderRadius: '100%', minWidth: 50, marginRight: '1rem' }} />
+          <div>
+          <span style={{ display: 'block' }} class="site-title">{siteData.site.siteMetadata.title}</span>
+          <span style={{ display: 'block' }}>Higher Ed IT Leader</span>
+          </div>
+      </Link>
+    
     <ul className="top-nav">
       <li><Link to={ '/about' }>About</Link></li>
       <li><Link>Contact</Link></li>
