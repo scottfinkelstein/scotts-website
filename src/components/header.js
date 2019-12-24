@@ -6,13 +6,14 @@ import Image from "gatsby-image"
 const Header = ({ siteData }) => (
   <header>
     
-      <Link to="/" className="logo">
-        <Image fixed={ siteData.avatar.childImageSharp.fixed } alt={ siteData.site.siteMetadata.author } style={{ borderRadius: '100%', minWidth: 50, marginRight: '1rem' }} />
+      
+      <div class="logo">
+          <Link to="/"><Image fixed={ siteData.avatar.childImageSharp.fixed } alt={ siteData.site.siteMetadata.author } style={{ borderRadius: '100%', minWidth: 50, marginRight: '1rem' }} /></Link>
           <div>
-          <span style={{ display: 'block' }} class="site-title">{siteData.site.siteMetadata.title}</span>
-          <span style={{ display: 'block' }}>Higher Ed IT Leader</span>
+          <span style={{ display: 'block' }} class="site-title"><Link to="/">{siteData.site.siteMetadata.title}</Link></span>
+          <span style={{ display: 'block' }}><a href={ "https://instagram.com/" + siteData.site.siteMetadata.instagram } target="_blank" rel="noopener">IG</a> | <a href={ "https://twitter.com/" + siteData.site.siteMetadata.twitter } target="_blank" rel="noopener">TW</a></span>
           </div>
-      </Link>
+      </div>
     
     <ul className="top-nav">
       <li><Link to={ '/about' }>About</Link></li>

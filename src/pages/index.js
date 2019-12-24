@@ -10,16 +10,28 @@ export default function Index({ data }) {
   return(
     <Layout>
       <SEO title="Home" />
-      <p dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.description }}></p>
-      
-      <h1>My Posts</h1>
+      <div class="primary-bar">
+        <div id="image">
+
+        </div>
+      <h1>
+        Technologist<br />
+        IT Leader<br />
+        Developer
+      </h1>
+      </div>
+      <div class="secondary-bar">
+      <h3>Musings</h3>
+      <div class="posts">
       { posts.filter(post => post.node.frontmatter.title.length > 0).map(({ node: post }) => {
         return(
           <div key="{ post.id }">
-            <h3><Link to={ post.frontmatter.path }>{ post.frontmatter.title }</Link></h3>
+            <Link to={ post.frontmatter.path }>{ post.frontmatter.title }</Link>
           </div>
         )
       })}
+      </div>
+      </div>
     </Layout>
   )
 }

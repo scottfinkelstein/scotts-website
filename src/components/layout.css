@@ -4,7 +4,7 @@
 
 body {
   font-family: Verdana, sans-serif;
-  margin: 2rem;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,6 +25,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
+  margin: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -47,4 +48,62 @@ header .top-nav {
 
 header .top-nav li:not(:last-child) {
   padding-right: 1rem;
+}
+
+.logo a {
+  color: inherit;
+}
+
+.primary-bar {
+  background-color: #CCC;
+  padding: 10px;
+  position: relative;
+}
+
+.primary-bar #image {
+  display: none;
+}
+
+.primary-bar h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.secondary-bar {
+  margin: 2rem;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: space-between;
+}
+
+.posts a {
+  background-color: #CCC;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 10px;
+  text-align: center;
+}
+
+.blog-post-container {
+  margin: 2rem;
+}
+
+footer {
+  margin: 2rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .primary-bar #image {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    width: 300px;
+    height: 300px;
+    background-color: #333;
+  }
 }

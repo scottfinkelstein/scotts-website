@@ -20,6 +20,8 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           author
+          twitter
+          instagram
         }
       }
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {

@@ -3,6 +3,8 @@ module.exports = {
     title: `Scott Finkelstein`,
     description: `Exploring the spaces between technology, design, leadership, and learning.`,
     author: `Scott Finkelstein`,
+    twitter: `SBF02`,
+    instagram: `scott.finkelstein`
   },
   plugins: [
     
