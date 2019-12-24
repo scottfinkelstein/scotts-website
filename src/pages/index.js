@@ -7,12 +7,13 @@ import SEO from "../components/seo"
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
+  
   return(
     <Layout>
       <SEO title="Home" />
       <div class="primary-bar">
         <div id="image">
-
+          <Image fixed={ data.scottPhoto.childImageSharp.fixed } />
         </div>
       <h1>
         Technologist<br />
@@ -53,6 +54,13 @@ export const pageQuery = graphql`
             path
           }
         }
+      }
+    }
+    scottPhoto: file(absolutePath: { regex: "/scott.png/" }) {
+      childImageSharp {
+          fixed(width: 50, height:50) {
+              ...GatsbyImageSharpFixed
+          }
       }
     }
   }
