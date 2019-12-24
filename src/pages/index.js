@@ -12,7 +12,7 @@ export default function Index({ data }) {
       <SEO title="Home" />
       <p dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.description }}></p>
       
-      <h3>My Posts</h3>
+      <h1>My Posts</h1>
       { posts.filter(post => post.node.frontmatter.title.length > 0).map(({ node: post }) => {
         return(
           <div key="{ post.id }">
