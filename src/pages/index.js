@@ -26,9 +26,9 @@ export default function Index({ data }) {
       <div className="posts">
       { posts.filter(post => post.node.frontmatter.title.length > 0).map(({ node: post }) => {
         return(
-          <Link key="{ post.id }" to={ post.frontmatter.path } style={{ position: 'relative' }}>
-            { post.frontmatter.featuredImage !== null && <Image fixed={ post.frontmatter.featuredImage.childImageSharp.fixed } style={{ position: 'absolute', top: '0', left: '0' }} /> }
-            <span style={{ position: 'absolute', top: '0', left: '0' }}>{ post.frontmatter.title }</span>
+          <Link key="{ post.id }" to={ post.frontmatter.path }>
+            { post.frontmatter.featuredImage !== null && <Image fixed={ post.frontmatter.featuredImage.childImageSharp.fixed } /> }
+            <span>{ post.frontmatter.title }</span>
           </Link>
         )
       })}

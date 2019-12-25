@@ -76,6 +76,7 @@ header .top-nav li:not(:last-child) {
 }
 
 .posts a {
+  position: relative;
   background-color: #D8D8D8;
   width: 248px;
   height: 124px;
@@ -83,6 +84,25 @@ header .top-nav li:not(:last-child) {
   margin-right: 10px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+.posts a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.posts a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 248px;
+  height: 124px;
+  color: #FFF;
+}
+
+.posts a:hover span {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 footer {
