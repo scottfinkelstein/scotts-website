@@ -28,7 +28,9 @@ export default function Index({ data }) {
         return(
           <Link key="{ post.id }" to={ post.frontmatter.path }>
             { post.frontmatter.featuredImage !== null && <Image fixed={ post.frontmatter.featuredImage.childImageSharp.fixed } /> }
-            <span>{ post.frontmatter.title }</span>
+            <span>
+              { post.frontmatter.title }
+            </span>
           </Link>
         )
       })}
