@@ -16,9 +16,9 @@ export default function Index({ data }) {
         <Image fixed={ data.avatar.childImageSharp.fixed } alt={ data.site.siteMetadata.author } />
         </div>
       <h1>
-        Technologist<br />
-        IT Leader<br />
-        Developer
+        <span style={{ color: '#3A619A' }}>Technologist</span><br />
+        <span style={{ color: '#468820' }}>IT Leader</span><br />
+        <span style={{ color: '#AC9A12' }}>Developer</span>
       </h1>
       </div>
       <div class="secondary-bar">

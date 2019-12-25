@@ -73,6 +73,10 @@ header .top-nav li:not(:last-child) {
   margin: 2rem;
 }
 
+.secondary-bar h3 {
+  color: #7B7B7B;
+}
+
 .posts {
   display: flex;
   flex-wrap: wrap;
@@ -80,9 +84,9 @@ header .top-nav li:not(:last-child) {
 }
 
 .posts a {
-  background-color: #CCC;
-  width: 200px;
-  height: 200px;
+  background-color: #D8D8D8;
+  width: 248px;
+  height: 124px;
   display: block;
   margin: 10px;
   text-align: center;
