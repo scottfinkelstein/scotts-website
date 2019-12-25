@@ -26,9 +26,10 @@ export default function Index({ data }) {
       <div className="posts">
       { posts.filter(post => post.node.frontmatter.title.length > 0).map(({ node: post }) => {
         return(
-          <div key="{ post.id }">
-            <Link to={ post.frontmatter.path }>{ post.frontmatter.title }</Link>
-          </div>
+          <Link key="{ post.id }" to={ post.frontmatter.path } style={{ position: 'relative' }}>
+            { post.frontmatter.featuredImage !== null && <Image fixed={ post.frontmatter.featuredImage.childImageSharp.fixed } style={{ position: 'absolute', top: '0', left: '0' }} /> }
+            <span style={{ position: 'absolute', top: '0', left: '0' }}>{ post.frontmatter.title }</span>
+          </Link>
         )
       })}
       </div>
@@ -52,6 +53,13 @@ export const pageQuery = graphql`
             title
             date
             path
+            featuredImage {
+              childImageSharp {
+                fixed(width: 248, height: 124) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }

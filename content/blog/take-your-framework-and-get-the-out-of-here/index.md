@@ -2,8 +2,8 @@
 title: "Take Your Framework and get the F*!@ Out of Here!"
 date: "2018-12-29T22:05:00.121Z"
 path: "/take-your-framework-and-get-the-out-of-here"
+featuredImage: abstract-business-code.jpg
 ---
-![Screen-Shot-2018-12-29-at-7.18.18-PM-1](./abstract-business-code.jpg)
 “Don’t you know how much time you would save if you used a framework?”
 
 “Ruby on Rails was good enough to build Twitter with. You should use it for your application.”

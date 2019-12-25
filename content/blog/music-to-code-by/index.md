@@ -2,8 +2,8 @@
 title: "Music to Code By"
 date: "2018-12-28T18:07:00.121Z"
 path: "/music-to-code-by"
+featuredImage: record.jpg
 ---
-![Record Player](./record.jpg)
 I have extremely varied musical tastes. I can listen to almost any genre and find at least one album I like. However, when I’m doing a stretch of programming for a project, I find it helps to listen to music that draws the attention toward the code.
 
 Here are 14 albums that put my mind in the zone when I program. Most of these albums are readily available on Apple Music or Spotify, and some are from my own (pre-streaming service) collection.

@@ -2,6 +2,7 @@
 title: "Tying Everything Together with Django REST"
 date: "2019-12-22"
 path: "/tying-everything-together-with-django-rest"
+featuredImage: 
 ---
 
 Over the past few years, one of the challenges I've faced is pulling API data from various sources into our mobile app, AU2GO. I've always had to write a PHP script to handle the cURL request, sending auth tokens to the third party endpoint. The problem was, that I've accumulated too many of these ad-hoc scripts on a few different web servers. Recently, my team has started to look for a way to tie everything together.
