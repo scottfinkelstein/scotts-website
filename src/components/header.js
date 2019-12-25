@@ -7,7 +7,7 @@ const Header = ({ siteData }) => (
   <header>
     
       
-      <div class="logo">
+      <div className="logo">
           <Link to="/"><Image fixed={ siteData.avatar.childImageSharp.fixed } alt={ siteData.site.siteMetadata.author } style={{ borderRadius: '100%', minWidth: 50, marginRight: '1rem' }} /></Link>
           <div>
           <span style={{ display: 'block' }} class="site-title"><Link to="/">{siteData.site.siteMetadata.title}</Link></span>
@@ -17,7 +17,7 @@ const Header = ({ siteData }) => (
     
     <ul className="top-nav">
       <li><Link to={ '/about' }>About</Link></li>
-      <li><Link>Contact</Link></li>
+      <li><Link to={ '/contact' }>Contact</Link></li>
     </ul>
   </header>
 )

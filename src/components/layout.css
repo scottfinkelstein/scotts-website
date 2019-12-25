@@ -69,14 +69,6 @@ header .top-nav li:not(:last-child) {
   text-transform: uppercase;
 }
 
-.secondary-bar {
-  margin: 2rem;
-}
-
-.secondary-bar h3 {
-  color: #7B7B7B;
-}
-
 .posts {
   display: flex;
   flex-wrap: wrap;
@@ -88,16 +80,21 @@ header .top-nav li:not(:last-child) {
   width: 248px;
   height: 124px;
   display: block;
-  margin: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   text-align: center;
-}
-
-.blog-post-container {
-  margin: 2rem;
 }
 
 footer {
   margin: 2rem;
+}
+
+.container {
+  margin: 2rem;
+}
+
+.container h3 {
+  color: #7B7B7B;
 }
 
 @media only screen and (min-width: 900px) {

@@ -11,7 +11,7 @@ export default function Index({ data }) {
   return(
     <Layout>
       <SEO title="Home" />
-      <div class="primary-bar">
+      <div className="primary-bar">
         <div id="image">
         <Image fixed={ data.avatar.childImageSharp.fixed } alt={ data.site.siteMetadata.author } />
         </div>
@@ -21,9 +21,9 @@ export default function Index({ data }) {
         <span style={{ color: '#AC9A12' }}>Developer</span>
       </h1>
       </div>
-      <div class="secondary-bar">
+      <div className="container">
       <h3>Musings</h3>
-      <div class="posts">
+      <div className="posts">
       { posts.filter(post => post.node.frontmatter.title.length > 0).map(({ node: post }) => {
         return(
           <div key="{ post.id }">

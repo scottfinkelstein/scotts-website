@@ -8,7 +8,7 @@ export default function Template({ data }) {
     const post = data.markdownRemark
     return(
         <Layout>
-        <div className="blog-post-container">
+        <div className="container">
             <Helmet title = {post.frontmatter.title } />
             <article className="blog-post">
                 <h1>{ post.frontmatter.title }</h1>
