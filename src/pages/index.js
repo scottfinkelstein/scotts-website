@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Image from "gatsby-image"
 import SEO from "../components/seo"
 
 export default function Index({ data }) {
@@ -13,7 +13,7 @@ export default function Index({ data }) {
       <SEO title="Home" />
       <div class="primary-bar">
         <div id="image">
-          <Image fixed={ data.scottPhoto.childImageSharp.fixed } />
+        <Image fixed={ data.avatar.childImageSharp.fixed } alt={ data.site.siteMetadata.author } />
         </div>
       <h1>
         Technologist<br />
@@ -56,9 +56,9 @@ export const pageQuery = graphql`
         }
       }
     }
-    scottPhoto: file(absolutePath: { regex: "/scott.png/" }) {
+    avatar: file(absolutePath: { regex: "/scott.png/" }) {
       childImageSharp {
-          fixed(width: 50, height:50) {
+          fixed(width: 348, height: 302) {
               ...GatsbyImageSharpFixed
           }
       }

@@ -102,8 +102,9 @@ footer {
     position: absolute;
     right: 20px;
     top: -50px;
-    width: 300px;
-    height: 300px;
-    background-color: #333;
+    width: 348px;
+    height: 302px;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
   }
 }
