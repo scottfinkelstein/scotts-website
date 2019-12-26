@@ -17,8 +17,8 @@ export default function Template({ data }) {
                 <h4 style={{ color: '#777' }}>{ post.frontmatter.date }</h4>
                 <div className="blog-post-content" dangerouslySetInnerHTML = {{ __html: post.html }} />
             </article>
-            <hr />
-            <Bio />
+            {/* <hr /> */}
+            {/* <Bio /> */}
         </div>
         </Layout>
     )

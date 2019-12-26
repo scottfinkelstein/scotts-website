@@ -40,9 +40,11 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()},
-          {` `}
-          { data.site.siteMetadata.author }
+          <div class="copyright">
+            © {new Date().getFullYear()}
+            {` `}
+            { data.site.siteMetadata.author }
+          </div>
         </footer>
       </div>
     </>

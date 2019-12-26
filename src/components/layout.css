@@ -115,6 +115,9 @@ header .top-nav li:not(:last-child) {
 
 footer {
   margin: 2rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #CCC;
+  font-size: 0.8rem;
 }
 
 .container {
@@ -123,6 +126,11 @@ footer {
 
 .container h3 {
   color: #7B7B7B;
+}
+
+.container hr {
+  border: 0;
+  border-top: 1px solid #CCC;
 }
 
 @keyframes slideUp {

@@ -5,6 +5,6 @@ path: "/tying-everything-together-with-django-rest"
 featuredImage: 
 ---
 
-Over the past few years, one of the challenges I've faced is pulling API data from various sources into our mobile app, AU2GO. I've always had to write a PHP script to handle the cURL request, sending auth tokens to the third party endpoint. The problem was, that I've accumulated too many of these ad-hoc scripts on a few different web servers. Recently, my team has started to look for a way to tie everything together.
+Over the past few years, we have written many ad-hoc PHP scripts that all do achieve the same task of proxying APIs from various first and third party sources. This allows us to handle any required token authorization, as well as reformatting the output to something more homogenous for our mobile app. While this has sort of become routine for us, it gives us a massive headache in managing and debugging each individual script. Recently, my team has started to look for a way to tie everything together.
 
 The solution is implementing a REST API framework that will centralize all of our custom web service calls to our ERP, as well as to third-party API's. In addition, Django has a really cool admin tool so we can quickly spin up our own data entry systems for our partners in other administrative offices, allowing them to control the data, which will be outputted as JSON.
