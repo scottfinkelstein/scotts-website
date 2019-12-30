@@ -8,7 +8,7 @@ const Header = ({ siteData }) => (
     
       
       <div className="logo">
-          <Link to="/"><Image fixed={ siteData.avatar.childImageSharp.fixed } alt={ siteData.site.siteMetadata.author } style={{ borderRadius: '100%', minWidth: 50, marginRight: '1rem' }} /></Link>
+          <Link to="/"><Image fixed={ siteData.logo.childImageSharp.fixed } alt={ siteData.site.siteMetadata.author } style={{ minWidth: 50, marginRight: '1rem' }} /></Link>
           <div>
           <span style={{ display: 'block' }} className="site-title"><Link to="/">{siteData.site.siteMetadata.title}</Link></span>
           <span style={{ display: 'block' }}><a href={ "https://instagram.com/" + siteData.site.siteMetadata.instagram } target="_blank" rel="noopener">IG</a> | <a href={ "https://twitter.com/" + siteData.site.siteMetadata.twitter } target="_blank" rel="noopener">TW</a> | <a href="https://www.linkedin.com/in/sbf0202/" target="_blank" rel="noopener">LI</a></span>
