@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer>
-          <div class="copyright">
+          <div className="copyright">
             © {new Date().getFullYear()}
             {` `}
             { data.site.siteMetadata.author }

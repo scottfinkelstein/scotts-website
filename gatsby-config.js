@@ -81,7 +81,15 @@ module.exports = {
             options: {
               maxWidth: 590,
             }
-          } 
+          },
+          {
+            resolve: `gatsby-remark-external-links`,
+            options: {
+              target: `_blank`,
+              rel: `noopener noreferrer`
+            }
+          }
+
         ]
       }
     }
