@@ -12,7 +12,7 @@ class About extends React.Component {
             <Layout>
                 <SEO title="About Me" />
                 <div className="container">
-                    <p>I manage the Mobile and Web Technologies team at <a href="https://adelphi.edu" target="_blank" rel="noopener noreferrer">Adelphi University,</a> Overseeing development for both the university website and mobile app.</p>
+                    <p>I manage the Mobile and Web Technologies team at <a href="https://adelphi.edu" target="_blank" rel="noopener noreferrer">Adelphi University,</a> overseeing development for both the university website and mobile app.</p>
                 </div>
             </Layout>
         )
