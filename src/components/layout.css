@@ -78,8 +78,8 @@ header .top-nav li:not(:last-child) {
 .posts a {
   position: relative;
   background-color: #D8D8D8;
-  width: 248px;
-  height: 124px;
+  width: 300px;
+  height: 150px;
   display: block;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -102,7 +102,7 @@ header .top-nav li:not(:last-child) {
   align-items: center;
   bottom: 0;
   left: 0;
-  width: 248px;
+  width: 300px;
   height: 55px;
   transition: 0.5s;
   color: #FFF;
