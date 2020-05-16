@@ -72,7 +72,7 @@ header .top-nav li:not(:last-child) {
 .posts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .posts a {
@@ -92,7 +92,6 @@ header .top-nav li:not(:last-child) {
   top: 0;
   left: 0;
 }
-
 
 .posts a span {
   position: absolute;
@@ -153,5 +152,15 @@ footer {
     height: 302px;
     -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .posts a {
+    width: 100%;
+  }
+
+  .posts a span {
+    width: 100%;
   }
 }
