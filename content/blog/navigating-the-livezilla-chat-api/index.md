@@ -3,6 +3,7 @@ title: "Navigating the LiveZilla Chat API"
 date: "2020-05-16"
 path: "/navigating-the-livezilla-chat-api"
 featuredImage: chat-image.jpg
+##Photo by Austin Distel on Unsplash
 ---
 Our IT Help Desk currently use LiveZilla as a live chat application. It's an awesome tool providing a direct line of communication for our students and staff to receive support. I was never a fan of Livezilla from a technology standpoint... until now.
 
