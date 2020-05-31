@@ -22,12 +22,12 @@ export default function Index({ data }) {
       </h1>
       </div>
       <div className="container">
-      <h3>Musings</h3>
+      {/* <h3>Musings</h3> */}
       <div className="posts">
       { posts.filter(post => post.node.frontmatter.title.length > 0).map(({ node: post }) => {
         return(
           <Link key="{ post.id }" to={ post.frontmatter.path }>
-            { post.frontmatter.featuredImage !== null && <Image fixed={ post.frontmatter.featuredImage.childImageSharp.fixed } /> }
+            { post.frontmatter.featuredImage !== null && <Image fluid={ post.frontmatter.featuredImage.childImageSharp.fluid } /> }
             <span>
               { post.frontmatter.title }
             </span>
@@ -59,6 +59,9 @@ export const pageQuery = graphql`
               childImageSharp {
                 fixed(width: 300, height: 150) {
                   ...GatsbyImageSharpFixed
+                }
+                fluid {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
