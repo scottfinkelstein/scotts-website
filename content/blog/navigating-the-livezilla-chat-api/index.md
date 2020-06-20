@@ -20,3 +20,5 @@ This leaves receiving messages. In the past, we have set interval timers in the 
 We are using Django REST Framework to develop our API platform. While this affords us the robust [Django Channels](https://channels.readthedocs.io/en/latest/) library, we would like to keep this API platform as RESTful as possible, I'm looking to spin up a separate NodeJS instance running [Socket.IO](https://socket.io). This NodeJS Server will sit between the mobile app and the API, listening to the outgoing Help Desk rep chat messages (along with the chat session ID)and sending it to the client app.
 
 So far, we have a proof-of-concept working using a bare-bones SwiftUI iOS app, connecting to the the 3 API endpoints, and a node socket server running on localhost + [ngrok](https://ngrok.com) listening to chat operator responses. 
+
+I tested this out with a couple of simultanious chat sessions. Since they use the chat ID this keeps the communication one-to-one, however we will need to test this with multiple devices / operators.
