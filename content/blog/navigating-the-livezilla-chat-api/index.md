@@ -5,6 +5,10 @@ path: "/navigating-the-livezilla-chat-api"
 featuredImage: chat-image.jpg
 ##Photo by Austin Distel on Unsplash
 ---
+**UPDATE July 11, 2020 &mdash; LiveZilla GmbH went into dissolution and will be winding down their operations over the next year. So over the next few months we will be selecting a replacement.**
+
+**While we need to find a solution that ultimately checks all the boxes for our HelpDesk, I will be advocating that whatever we choose has many of the same REST API features as LiveZilla, along with many other features that I felt LiveZilla was lacking in &mdash; mainly full control over the design for cleaner integration in our website, along with possible chatbot and voice assistant integration.**
+
 In evaluating student needs for our new mobile app, we decided that a built in chat is something students will benefit from. Our IT Help Desk uses LiveZilla as a live chat application. It's an awesome tool providing a direct line of communication for our students and staff to receive support. That said,I didn't think that Livezilla had a robust enough API, but after spending some time with it and building a rough prototype, my opinion has changed in favor of it.
 
 In building out a native mobile chat interface, we will need to utilize three LiveZilla API endpoints:
