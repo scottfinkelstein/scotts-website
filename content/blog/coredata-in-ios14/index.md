@@ -27,13 +27,15 @@ In keeping things simple, lets call this file "MyDataModel." Once it's created o
 
 Next we will want to create a new class which will allow us to access our new Data Model. For this, I like to use the Singleton pattern to ensure we are referencing the same data store regardless of where we are in the app.
 
-`gist:scottfinkelstein/28dc51cf0e1b9d2522f0493d29007122`
+`gist:scottfinkelstein/0fb3ea2f496860e09d67401aade07ecc`
 
 What we are doing here is importing the CoreData framework, and again, using the singleton pattern, creating a static "shared" variable that holds the one instance of the class. I then create my persistent container referencing my data model file, keeping this all in a lazy var that will only instantiate when I eventually call it from ContentView. I also create the "saveContext()" method which we can call upon running any CRUD action on our data. If all this looks familiar it's because this is what was previously generated for us in our old AppDelegate files.
 
 Next we need to add our new DataStore class to our MyTodoListApp.swift file:
 
-`gist:scottfinkelstein/0fb3ea2f496860e09d67401aade07ecc`
+
+`gist:scottfinkelstein/28dc51cf0e1b9d2522f0493d29007122`
+
 
 Here I'm creating a context variable from the persistent container in our DataStore singleton, and adding as an environment variable to our ContentView. Jumping into our ContentView we have the following:
 
