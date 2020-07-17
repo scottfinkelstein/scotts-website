@@ -1,6 +1,6 @@
 ---
 title: "Implementing CoreData in iOS 14's New SwiftUI Entry"
-date: "2020-07-13"
+date: "2020-07-17"
 path: "/coredata-in-ios14"
 featuredImage: coredata-cover-image.jpeg
 ---
@@ -25,7 +25,7 @@ In keeping things simple, lets call this file "MyDataModel." Once it's created o
 
 ![Create a new entity](./core-data-model.png)
 
-Next we will want to create a new class which will allow us to access our new Data Model. For this, I like to use the Singleton pattern to ensure we are referencing the same data store regardless of where we are in the app.
+Next we will want to create a new class which will allow us to access our new Data Model. For this, I like to use the Singleton pattern to ensure we are referencing the same data store regardless of where we are in the app:
 
 `gist:scottfinkelstein/0fb3ea2f496860e09d67401aade07ecc`
 
