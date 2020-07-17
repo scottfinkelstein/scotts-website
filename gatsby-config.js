@@ -88,6 +88,21 @@ module.exports = {
               target: `_blank`,
               rel: `noopener noreferrer`
             }
+          },
+
+          {
+            resolve: 'gatsby-remark-embed-gist',
+            options: {
+              gistCssUrlAddress: 'https://github.githubassets.com/assets/gist-embed-b3b573358bfc66d89e1e95dbf8319c09.css'
+            }
+          },
+
+          {
+            resolve: 'gatsby-remark-embed-youtube',
+            options: {
+              width: 800,
+              height: 400
+            }
           }
 
         ]
