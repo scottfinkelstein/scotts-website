@@ -35,9 +35,9 @@ header .logo {
   color: inherit;
 }
 
-header .logo img {
+/* header .logo img {
   border-radius: 50%;
-}
+} */
 
 header span.site-title {
   font-size: 1rem;
@@ -153,10 +153,15 @@ footer {
     position: absolute;
     right: 20px;
     top: -50px;
-    width: 348px;
-    height: 302px;
-    /* -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5)); */
+    width: 300px;
+    height: 300px;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+  }
+
+  .primary-bar #image img {
+
+    border-radius: 50%;
   }
 }
 

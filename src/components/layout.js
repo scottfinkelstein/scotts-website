@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
             }
         }
       }
-      logo: file(absolutePath: { regex: "/scott2.jpg/" }) {
+      logo: file(absolutePath: { regex: "/logo.png/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
