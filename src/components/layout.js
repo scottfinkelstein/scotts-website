@@ -24,14 +24,14 @@ const Layout = ({ children }) => {
           instagram
         }
       }
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile-logo.jpg/" }) {
         childImageSharp {
             fixed(width: 50, height:50) {
                 ...GatsbyImageSharpFixed
             }
         }
       }
-      logo: file(absolutePath: { regex: "/scott-logo.png/" }) {
+      logo: file(absolutePath: { regex: "/temp-logo.png/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
