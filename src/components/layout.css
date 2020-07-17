@@ -35,6 +35,10 @@ header .logo {
   color: inherit;
 }
 
+header .logo img {
+  border-radius: 50%;
+}
+
 header span.site-title {
   font-size: 1rem;
   font-weight: bold;
@@ -151,8 +155,8 @@ footer {
     top: -50px;
     width: 348px;
     height: 302px;
-    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    /* -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5)); */
   }
 }
 
