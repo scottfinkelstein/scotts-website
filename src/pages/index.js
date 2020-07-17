@@ -69,7 +69,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    avatar: file(absolutePath: { regex: "/logo2.png/" }) {
+    avatar: file(absolutePath: { regex: "/logo.png/" }) {
       childImageSharp {
           fixed(width: 325, height: 325) {
               ...GatsbyImageSharpFixed
