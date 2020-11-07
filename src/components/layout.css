@@ -54,6 +54,10 @@ header .top-nav li:not(:last-child) {
   padding-right: 1rem;
 }
 
+li {
+  margin-bottom: 15px;;
+}
+
 .logo a {
   color: inherit;
 }
