@@ -15,12 +15,18 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          `material icons`,
-          `roboto:300,400,500,700`
-        ],
+        fonts: {
+          google: [
+            {
+              family: "Montserrat"
+            },
+            {
+              family: "Merriweather"
+            }
+          ]
+        }
       }
     },
     `gatsby-transformer-sharp`,
@@ -51,19 +57,19 @@ module.exports = {
         name: 'assets'
       }
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Montserrat`
-          },
-          {
-            family: `Merriweather`
-          }
-        ]
-      }
-    },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Montserrat`
+    //       },
+    //       {
+    //         family: `Merriweather`
+    //       }
+    //     ]
+    //   }
+    // },
     `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,
