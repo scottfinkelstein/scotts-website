@@ -11,7 +11,7 @@ This past July, we proudly launched Adelphi University's [new website](https://a
 
 <!-- ![Academic Calendar Table](./academic-calendar.png) -->
 
-I Modified an old custom Wordpress plugin from our old site to pull in academic calendar info from our new LiveWhale events calendar API. I built this plugin about 5 years ago to pull in data from a Google Sheet maintained by the Registrar, but revisiting this gave me the opportunity to rethink how I originally built these shortcodes, making them more modular and flexible for everyone on the team to create a separate table listing for each semester. The results can be seen [here](https://www.adelphi.edu/academics/academic-calendar/). I'm hoping to move away from building custom plugins for this type of stuff, instead using our new ACF Components architecture, but it's a step in the right direction.
+I modified an old custom Wordpress plugin from our old site to pull in academic calendar info from our new LiveWhale events calendar API. I built this plugin about 5 years ago to pull in data from a Google Sheet maintained by the Registrar, but revisiting this gave me the opportunity to rethink how I originally built these shortcodes, making them more modular and flexible for everyone on the team to create a separate table listing for each semester. The results can be seen [here](https://www.adelphi.edu/academics/academic-calendar/). I'm hoping to move away from building custom plugins for this type of stuff, instead using our new ACF Components architecture, but it's a step in the right direction.
 
 ##New Personnel and Department Directory
 
